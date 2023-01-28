@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class DoWhile {
+
+ 
+    public static void main(String[] args) {
+         int num, sum=0;
+         char want;
+        
+         Scanner s = new Scanner(System.in);
+        
+         do {
+             System.out.print("Enter a number: ");
+             num=s.nextInt();
+             sum += num;
+             
+             System.out.print("Do you want to enter another number: ");
+             want = s.next() .charAt(0);
+         }while (want == 'y' || want == 'y');
+         
+         s.close();
+         
+         System.out.print("The sum is: " +sum +".");
+            
+         }
+    
+}
